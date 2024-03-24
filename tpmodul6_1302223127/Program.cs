@@ -6,7 +6,16 @@ internal class Program
     {
         SayaTubeVideo video = new SayaTubeVideo("Tutorial Design By Contract - Fauzein Mulya Warman");
 
-        video.IncreasePlayCount(100);
         video.PrintVideoDetail();
+
+        for (int i = 1; i <= 217; i++)
+        {
+            video.IncreasePlayCount(10000000);
+        }
+
+        video.PrintVideoDetail();
+
+        //SayaTubeVideo video2 = new SayaTubeVideo(null);
+
     }
 }
